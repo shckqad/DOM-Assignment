@@ -4,13 +4,10 @@
 //Use a FOR loop to iterate through the NodeList and insert into the HTML a random word from the array of words
 
 var mnemonicArray = document.getElementsByClassName('mnemonic');
-codes = ['rat', 'thumb', 'wale', 'noxious', 'smarten', 'hair', 'gramazone', 'salty', 'corbeaux', 'cup', 'opera', 'pillow', 'pipe', 'mk14ebr', 'usb', 'painting', 'tv', 'fan', 'sneaker', 'backpack', 'basket', 'noose', 'lightbulb', 'playstation'];
-
-
 
 for (var q = 0; q < mnemonicArray.length; q++) {
-const codes = ['rat', 'thumb', 'wale', 'noxious', 'smarten', 'hair', 'gramazone', 'salty', 'corbeaux', 'cup', 'opera', 'pillow', 'pipe', 'mk14ebr', 'usb', 'painting', 'tv', 'fan', 'sneaker', 'backpack', 'basket', 'noose', 'lightbulb', 'playstation'];
+var codes = ['rat', 'thumb', 'wale', 'noxious', 'smarten', 'hair', 'gramazone', 'salty', 'corbeaux', 'cup', 'opera', 'pillow', 'pipe', 'mk14ebr', 'usb', 'painting', 'tv', 'fan', 'sneaker', 'backpack', 'basket', 'noose', 'lightbulb', 'playstation'];
 
-const random = Math.floor(Math.random() * codes.length);
+var random = Math.floor(Math.random() * codes.length);
   mnemonicArray[q].textContent = codes[random];
   }
